@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loko Pono（ロコ・ポノ）｜グリーフケア・スピリチュアルケアのオンラインカウンセリング</title>
+<meta name="description" content="グリーフケア（死別・喪失の悲しみ）、スピリチュアルケア、人生の転機など、さまざまな心理相談をお受けするオンラインカウンセリング Loko Pono（ロコ・ポノ）。臨床スピリチュアルケア師・国家資格キャリアコンサルタントの浅野浩子が、Zoom で全国どこからでも安心して話せる場をご用意します。">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Loko Pono（ロコ・ポノ）｜グリーフケア・スピリチュアルケアのオンラインカウンセリング">
+<meta property="og:description" content="オンラインカウンセリングを通して、安心できる関係性を築きながら、自分らしさを少しずつ取り戻していく。">
+<meta property="og:image" content="assets/img/room.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================================================================
+     ▼▼▼ お申し込みフォームの設定（ここだけを書き換えてください）▼▼▼
+
+     FORM_ENDPOINT
+       フォームの送信先です。Formspree（無料）でフォームを作成すると
+       「https://formspree.io/f/xxxxxxxx」という URL が発行されるので、
+       " " の中に貼り付けて保存します。
+       空のままの場合は、送信ボタンを押すと、お客さまのメールソフトが
+       入力内容入りで開く方式になります（メールソフトを設定していない
+       パソコンでは送れないことがあるため、公開前の設定をおすすめします）。
+
+     CONTACT_EMAIL
+       お申し込みを受け取るメールアドレスです。
+
+     ※ 手順は「お申し込みフォーム設定ガイド.docx」をご覧ください。
+     ※ " " の中以外は消さないでください。
+     ================================================================ -->
+<script>
+  window.FORM_ENDPOINT = "https://formspree.io/f/meaovjkw";
+  window.CONTACT_EMAIL = "hiroko.goma@gmail.com";
+</script>
+<!-- ▲▲▲ お申し込みフォームの設定はここまで ▲▲▲ -->
+
+
+<!-- ============ ローディング ============ -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <span class="loader__mark" aria-hidden="true"></span>
+    <p class="loader__text">Loko&nbsp;Pono</p>
+  </div>
+</div>
+
+<!-- ============ ヘッダー ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#hero" class="logo">
+      <span class="logo__mark" aria-hidden="true"></span>
+      <span class="logo__text">
+        <span class="logo__en">Loko Pono</span>
+        <span class="logo__ja">オンラインカウンセリング</span>
+      </span>
+    </a>
+
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul class="gnav__list">
+        <li><a href="#concept" class="gnav__link"><span class="gnav__en">Concept</span><span class="gnav__ja">コンセプト</span></a></li>
+        <li><a href="#worry" class="gnav__link"><span class="gnav__en">Reason&nbsp;for&nbsp;visit</span><span class="gnav__ja">ご相談内容</span></a></li>
+        <li><a href="#feature" class="gnav__link"><span class="gnav__en">Feature</span><span class="gnav__ja">特徴</span></a></li>
+        <li><a href="#profile" class="gnav__link"><span class="gnav__en">Profile</span><span class="gnav__ja">プロフィール</span></a></li>
+        <li><a href="#voice" class="gnav__link"><span class="gnav__en">Voice</span><span class="gnav__ja">利用者の声</span></a></li>
+        <li><a href="#column" class="gnav__link"><span class="gnav__en">Column</span><span class="gnav__ja">瞑想・坐禅</span></a></li>
+        <li><a href="#price" class="gnav__link"><span class="gnav__en">Price</span><span class="gnav__ja">料金・予約</span></a></li>
+        <li><a href="#faq" class="gnav__link"><span class="gnav__en">FAQ</span><span class="gnav__ja">よくある質問</span></a></li>
+      </ul>
+      <a href="#reserve" data-reserve class="gnav__cta">初回オンライン相談を申し込む</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay" hidden></div>
+
+<main>
+
+<!-- ============ 1. ファーストビュー ============ -->
+<section class="hero" id="hero">
+  <div class="hero__light" aria-hidden="true"></div>
+  <div class="hero__leaves" aria-hidden="true">
+    <svg class="leaf leaf--1" viewBox="0 0 100 100"><path d="M50 5C25 25 15 55 30 80c20-5 40-30 20-75z"/></svg>
+    <svg class="leaf leaf--2" viewBox="0 0 100 100"><path d="M50 5C25 25 15 55 30 80c20-5 40-30 20-75z"/></svg>
+    <svg class="leaf leaf--3" viewBox="0 0 100 100"><path d="M50 5C25 25 15 55 30 80c20-5 40-30 20-75z"/></svg>
+    <svg class="leaf leaf--4" viewBox="0 0 100 100"><path d="M50 5C25 25 15 55 30 80c20-5 40-30 20-75z"/></svg>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__body">
+      <p class="hero__label">オンラインカウンセリング</p>
+      <p class="hero__fields">グリーフケア・スピリチュアルケア・<br class="sp-only">その他さまざまな心理相談</p>
+      <h1 class="hero__catch">
+        <span class="line"><span>心を、</span></span>
+        <span class="line"><span>本来の調和へ。</span></span>
+      </h1>
+      <p class="hero__sub">
+        オンラインカウンセリングを通して、安心できる関係性を築きながら、<br class="pc-only">
+        自分らしさを少しずつ取り戻していく。<br class="pc-only">
+        そんな時間と場を、ともに育んでいきたいと思っています。
+      </p>
+      <div class="hero__actions">
+        <a href="#reserve" data-reserve class="btn btn--primary">
+          <span>初回オンライン相談を申し込む</span>
+        </a>
+        <a href="#concept" class="btn btn--ghost"><span>Loko Pono について</span></a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <figure class="arch">
+        <img src="assets/img/room.jpg" alt="やわらかな光の差し込む、オンライン相談を行っている部屋" width="1800" height="1522" fetchpriority="high">
+        <span class="arch__glow" aria-hidden="true"></span>
+      </figure>
+      <p class="hero__caption">ここから、お話をうかがっています。</p>
+    </div>
+  </div>
+
+  <a href="#concept" class="scroll-cue" aria-label="下へスクロール">
+    <span class="scroll-cue__text">Scroll</span>
+    <span class="scroll-cue__line" aria-hidden="true"></span>
+  </a>
+</section>
+
+<!-- ============ 2. コンセプト ============ -->
+<section class="section concept" id="concept">
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">Concept</p>
+      <h2 class="sec-head__ja">コンセプト</h2>
+    </header>
+
+    <div class="concept__lead" data-anim>
+      <p class="concept__word">Loko&nbsp;Pono<span class="concept__ruby">ロコ・ポノ</span></p>
+      <p class="concept__meaning">
+        ハワイ語で、<em>「内面（心や精神）が正しく調和している状態」</em><br>
+        <em>「穏やかで満たされた気持ち」</em>を意味する言葉です。
+      </p>
+      <p class="concept__text">
+        森の中に差し込む木漏れ日のように。<br>
+        深呼吸したくなる、静かであたたかい場所で。<br>
+        あなたの心が本来の調和を取り戻していく時間を、ご一緒します。
+      </p>
+    </div>
+
+    <div class="services" data-anim>
+      <p class="services__title">ご提供しているサービス<br class="sp-only">（すべてオンライン）</p>
+      <ul class="services__list">
+        <li class="service-card">
+          <span class="service-card__num">01</span>
+          <h3>グリーフケア</h3>
+          <p>身近な人や存在を失った哀しみとともに生きること。その道のりに寄り添います。</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__num">02</span>
+          <h3>スピリチュアルケア</h3>
+          <p>生きる意味、死、生きづらさ、自分らしさなど、人生の根源的な問いに向き合います。</p>
+        </li>
+        <li class="service-card">
+          <span class="service-card__num">03</span>
+          <h3>人生の転機の相談</h3>
+          <p>これからをどう生きるか。大きな転機のなかにある生き方のご相談をお受けします。</p>
+        </li>
+      </ul>
+      <p class="services__note">
+        必要に応じて、瞑想や坐禅など、頭で考えるだけではなく、<br class="pc-only">静かに自分自身と向き合う時間のご提案も可能です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. ご相談内容 ============ -->
+<section class="section worry" id="worry">
+  <div class="worry__bg" aria-hidden="true"></div>
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">Reason for visit</p>
+      <h2 class="sec-head__ja">こんなお悩みは<br class="sp-only">ありませんか？</h2>
+    </header>
+
+    <ul class="worry__list">
+      <li data-anim>自死、病死、突然死、公認されない死別などで、深い喪失を抱えている</li>
+      <li data-anim>愛着や対人関係に課題を感じている</li>
+      <li data-anim>生きる意味や生きづらさ、消えてしまいたいような思いを抱えている</li>
+      <li data-anim>人生の転機のなかで、これからの生き方に迷っている</li>
+      <li data-anim>誰にも話せない思いを、安心して話せる場所が欲しい</li>
+    </ul>
+
+    <p class="worry__message" data-anim>
+      そんなときは、一人で抱え込まずに、<br class="sp-only">心の中をそっと言葉にしてみませんか。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 4. 特徴 ============ -->
+<section class="section feature" id="feature">
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">Feature</p>
+      <h2 class="sec-head__ja">カウンセリングの特徴</h2>
+    </header>
+
+    <ul class="feature__list">
+      <li class="feature-card" data-anim>
+        <p class="feature-card__num"><span>Feature</span>01</p>
+        <h3 class="feature-card__title">『生と死』に関わる<br>10年以上の経験</h3>
+        <p class="feature-card__text">臨床スピリチュアルケア師として、生と死、喪失やかなしみに関わる相談に携わってきた経験を活かします。</p>
+      </li>
+      <li class="feature-card" data-anim>
+        <p class="feature-card__num"><span>Feature</span>02</p>
+        <h3 class="feature-card__title">グリーフケアと<br class="pc-only">心理学的な視点</h3>
+        <p class="feature-card__text">死別をはじめ、人生の中で経験するさまざまな喪失や、生きづらさにも目を向けます。</p>
+      </li>
+      <li class="feature-card" data-anim>
+        <p class="feature-card__num"><span>Feature</span>03</p>
+        <h3 class="feature-card__title">国家資格キャリア<br>コンサルタントの視点</h3>
+        <p class="feature-card__text">人生の再構築、自分らしく生きることを、ご一緒に整理していきます。</p>
+      </li>
+      <li class="feature-card" data-anim>
+        <p class="feature-card__num"><span>Feature</span>04</p>
+        <h3 class="feature-card__title">オンラインだから<br class="pc-only">どこからでも</h3>
+        <p class="feature-card__text">ご自宅など、ご自身の安心できる場所から相談できます。</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 5. プロフィール ============ -->
+<section class="section profile" id="profile">
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">Profile</p>
+      <h2 class="sec-head__ja">カウンセラー紹介</h2>
+    </header>
+
+    <div class="profile__main">
+      <div class="profile__visual" data-anim>
+        <figure class="profile__photo">
+          <img src="assets/img/profile.jpg" alt="パソコンに向かい、オンラインでお話をうかがうカウンセラー 浅野浩子" width="720" height="1120" loading="lazy">
+        </figure>
+        <div class="profile__name">
+          <p class="profile__role">カウンセラー</p>
+          <p class="profile__ja">浅野　浩子</p>
+          <p class="profile__kana">あさの　ひろこ</p>
+        </div>
+      </div>
+
+      <div class="profile__body" data-anim>
+        <p class="profile__catch">お一人おひとりのライフスタイルに合わせた、<br class="pc-only">心のケアをお届けしたい。</p>
+        <p>遺族支援団体に所属し、多くの方の心の相談をお受けしています。お一人おひとりのライフスタイルに合わせた心のケアをお届けしたいという想いから、この個人相談室を立ち上げました。</p>
+        <p>人は、今まで生きてきた方法ではどうにも立ちゆかないほどのスピリチュアルペインを抱えたときに、もう一度自分に向き合います。自分らしさに還るとはどんなことなのか——生きづらさをやわらげるためのお手伝いができたらと思っています。</p>
+      </div>
+    </div>
+
+    <div class="profile__story" data-anim>
+      <div class="story-card">
+        <h3 class="story-card__title">カウンセラーについて</h3>
+        <p>思春期からスピリチュアルペインを感じたことをきっかけに、「生きる意味」に向き合ってきました。</p>
+        <p>育児・海外生活、そして大きな存在の喪失経験を経て——<br>大きな転機を迎えるたび、深く自分自身に立ち返り、内面と誠実に向き合うことで、本来の自分へと静かに還ってきたように思います。</p>
+        <p>人生に散りばめられたやさしさに気づき、そして感謝しながら、探求の旅は続いています。</p>
+      </div>
+      <div class="story-card">
+        <h3 class="story-card__title">国家資格キャリアコンサルタント<br class="pc-only">取得への想い</h3>
+        <p>私にとってキャリアとは、仕事だけを意味するものではありません。</p>
+        <p>家族との関係性、社会での役割、自分の居場所など、これまで歩んできた人生を振り返りながら、これからどのように、何を大切に生きていくかを考えることだと思っています。</p>
+      </div>
+    </div>
+
+    <div class="profile__data" data-anim>
+      <div class="data-block">
+        <h3 class="data-block__title"><span class="data-block__en">License</span>資格</h3>
+        <ul class="data-list">
+          <li>臨床スピリチュアルケア師（日本スピリチュアルケア学会）</li>
+          <li>国家資格　キャリアコンサルタント</li>
+          <li>日本グリーフ専門士協会認定　グリーフカウンセラー／ペットロスカウンセラー</li>
+          <li>全国心理業連合会認定　プロフェッショナルカウンセラー／SNSカウンセラー</li>
+          <li>上智大学　心理学科卒業</li>
+          <li>小学校児童英語教師資格</li>
+        </ul>
+      </div>
+      <div class="data-block">
+        <h3 class="data-block__title"><span class="data-block__en">Career</span>経験</h3>
+        <ul class="data-list">
+          <li>オンラインカウンセリング歴　6年</li>
+          <li>遺族支援活動</li>
+          <li>自死遺族相談</li>
+          <li>緩和ケア病棟傾聴活動</li>
+          <li>身近な人をなくしたこどもたちのつどい</li>
+          <li>自死遺族のわかちあいの会のファシリテーター</li>
+          <li>瞑想リトリート企画・運営</li>
+          <li>ミュージックベル演奏（教会、被災地、地域活動）　など</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. 利用者の声 ============ -->
+<section class="section voice" id="voice">
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">Voice</p>
+      <h2 class="sec-head__ja">ご利用いただいた<br class="sp-only">方々の声</h2>
+    </header>
+
+
+    <ul class="voice__list">
+      <li class="voice-card" data-anim>
+        <span class="voice-card__quote" aria-hidden="true">“</span>
+        <h3 class="voice-card__title">画面越しでも伝わる<br>「体温」と静かな共感。<br>AIでは決して得られない<br class="pc-only">安心感がありました</h3>
+        <p class="voice-card__text">大切な存在を失った本当の哀しみや孤独感は、どれだけ整ったAIの回答を見ても癒えることはありませんでした。浅野先生との対話では、そっと寄り添っていただける温もりがありました。「答えを提示される」のではなく、「哀しみを丸ごと包み込んでくれる人の存在」そのものに救われました。心を開いて人と対話することの尊さを、改めて実感しています。</p>
+        <div class="voice-card__person">
+          <span class="voice-card__avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="15.5" r="6"/><path d="M8.5 33.5c0-6.35 5.15-11.5 11.5-11.5s11.5 5.15 11.5 11.5"/></svg>
+          </span>
+          <p class="voice-card__meta"><span class="voice-card__age">40代</span><span class="voice-card__tag">自死遺族</span></p>
+        </div>
+      </li>
+
+      <li class="voice-card" data-anim>
+        <span class="voice-card__quote" aria-hidden="true">“</span>
+        <h3 class="voice-card__title">「家族の前では<br>強くあらねば」と<br>抑えていた涙が溢れ、<br>初めて胸のつかえが<br class="pc-only">下りました</h3>
+        <p class="voice-card__text">家族の前で隠してきた想いをすべてそのまま受け止めていただいたことで、再び前を向いて歩む力が湧いてきました。</p>
+        <div class="voice-card__person">
+          <span class="voice-card__avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="15.5" r="6"/><path d="M8.5 33.5c0-6.35 5.15-11.5 11.5-11.5s11.5 5.15 11.5 11.5"/></svg>
+          </span>
+          <p class="voice-card__meta"><span class="voice-card__age">50代・男性</span></p>
+        </div>
+      </li>
+
+      <li class="voice-card" data-anim>
+        <span class="voice-card__quote" aria-hidden="true">“</span>
+        <h3 class="voice-card__title">無理に前を向くのではなく、<br>哀しみを大切に抱えながら<br>生きていいのだと<br class="pc-only">気づけました</h3>
+        <p class="voice-card__text">大切な存在を亡くしてから、元気になれない自分を責めてばかりいました。浩子さんとの時間の中で、「哀しみは、それだけ大切に想っていた証（愛）なんだ」と心から思えるようになり、涙を流す自分を初めて許すことができました。否定されることのない安心できる対話の空間があったからこそ、固まっていた心がじんわりと解けていきました。自分自身を労わる時間の大切さを教えていただきました。</p>
+        <div class="voice-card__person">
+          <span class="voice-card__avatar" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><circle cx="20" cy="15.5" r="6"/><path d="M8.5 33.5c0-6.35 5.15-11.5 11.5-11.5s11.5 5.15 11.5 11.5"/></svg>
+          </span>
+          <p class="voice-card__meta"><span class="voice-card__age">60代・女性</span></p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="voice__action" data-anim>
+      <a href="#reserve" data-reserve class="btn btn--primary">
+        <span>初回オンライン相談を申し込む</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ パララックス帯 ============ -->
+<section class="parallax" aria-label="相談室の風景">
+  <div class="parallax__bg" aria-hidden="true"></div>
+  <div class="parallax__inner">
+    <p class="parallax__text" data-anim>
+      静かに、<br class="sp-only">自分自身へ還る時間を。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 7. コラム・お知らせ ============ -->
+<section class="section column" id="column">
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">Column &amp; News</p>
+      <h2 class="sec-head__ja">心を調える<br class="sp-only">「瞑想・坐禅」のご案内</h2>
+    </header>
+
+    <div class="column__box" data-anim>
+      <p class="column__lead">
+        カウンセリングで心を言葉にしたあとは、<br class="pc-only">静かに自分と向き合う時間をつくってみるのもおすすめです。
+      </p>
+
+      <dl class="column__info">
+        <div class="column__row">
+          <dt>会場</dt>
+          <dd>甲斐国分寺　瞑想リトリート<span class="tag">年2回開催</span></dd>
+        </div>
+        <div class="column__row">
+          <dt>次回開催</dt>
+          <dd>2026年11月22日（日）<a href="#event" class="column__jump">詳しいご案内はこちら</a><br>2027年4月・第1日曜午後（予定）</dd>
+        </div>
+        <div class="column__row">
+          <dt>お知らせ</dt>
+          <dd>
+            <a href="https://www.instagram.com/kaikokubunji?igsh=amM2YnhxbWsxb3Ew" target="_blank" rel="noopener" class="link-ex">
+              甲斐国分寺のイベント情報（Instagram）
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- ▼ イベント告知（2026年11月22日）。開催後はこの <article> ごと削除してください -->
+    <article class="event" id="event" data-anim>
+      <a class="event__flyer" href="assets/img/event-20261122.jpg" target="_blank" rel="noopener" aria-label="チラシを大きな画像で開く（新しいタブ）">
+        <img src="assets/img/event-20261122.jpg" alt="紅葉とマインドフルネス 甲斐国分寺 のチラシ" width="1000" height="1414" loading="lazy">
+        <span class="event__zoom">拡大して見る</span>
+      </a>
+
+      <div class="event__body">
+        <p class="event__label">Event</p>
+        <h3 class="event__title">紅葉とマインドフルネス<span>甲斐国分寺</span></h3>
+        <p class="event__lead">
+          紅葉に彩られる甲斐国分寺で、日常から少し離れて、自分の内側に静かに意識を向ける時間を過ごしませんか。<br>
+          静かに坐り、呼吸や身体の感覚に気づく。ゆっくり歩きながら、足の裏、風、光、木々の色、音など、そのとき感じるものを味わう。何かを変えようとせず、ただ「今ここ」に気づいていく。<br>
+          坐禅やマインドフルネスが初めての方も安心してご参加いただけます。
+        </p>
+
+        <p class="event__sub">Program</p>
+        <ol class="event__program">
+          <li><b>坐禅体験</b>本堂の静けさの中で、呼吸と身体を感じる。</li>
+          <li><b>マインドフルウォーク</b>秋の境内をゆっくり歩き、五感をひらく。</li>
+          <li><b>静かな時間</b>歩いたあとの感覚を、もう一度静かに味わう。</li>
+          <li class="event__program-extra"><b>ミュージックベルの音色を聴く時間<small>会の終了後・希望者のみ</small></b>やさしい音色とともに、秋の余韻を味わいます。音が響き、消えていくひとときを、どうぞゆっくりお楽しみください。</li>
+        </ol>
+
+        <dl class="event__info">
+          <div><dt>日時</dt><dd>2026年11月22日（日）13:30〜15:30<small>（13:00 開場）</small></dd></div>
+          <div><dt>場所</dt><dd>甲斐国分寺<small>（山梨県笛吹市一宮町国分196-1）</small></dd></div>
+          <div><dt>参加費</dt><dd>2,000円</dd></div>
+          <div><dt>定員</dt><dd>20名</dd></div>
+          <div><dt>対象</dt><dd>大人の方</dd></div>
+        </dl>
+        <p class="event__note">※ミュージックベルは希望者のみ。参加・退出自由。</p>
+
+        <div class="event__actions">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScFbCcGOAhTxi7g6-77lFHb7sPDUVhHQJskFip54_F2q93SnQ/viewform?usp=header" target="_blank" rel="noopener" class="btn btn--primary"><span>お申し込みフォーム</span></a>
+          <a href="https://www.instagram.com/kaikokubunji" target="_blank" rel="noopener" class="link-ex">
+            Instagram の DM からも受け付けています
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <!-- ▲ イベント告知ここまで -->
+  </div>
+</section>
+
+<!-- ============ 8. 料金・予約の流れ ============ -->
+<section class="section price" id="price">
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">Menu &amp; Price</p>
+      <h2 class="sec-head__ja">メニュー・料金</h2>
+    </header>
+
+    <ul class="price__list">
+      <li class="price-card price-card--first" data-anim>
+        <span class="price-card__badge">はじめての方へ</span>
+        <h3 class="price-card__title">初回　オンライン相談</h3>
+        <p class="price-card__value"><span class="num">3,000</span><span class="yen">円</span></p>
+        <p class="price-card__time">60分</p>
+      </li>
+      <li class="price-card" data-anim>
+        <h3 class="price-card__title">継続　オンライン相談</h3>
+        <p class="price-card__value"><span class="num">4,500</span><span class="yen">円</span></p>
+        <p class="price-card__time">60分</p>
+      </li>
+    </ul>
+
+    <div class="schedule" data-anim>
+      <h3 class="schedule__title"><span class="schedule__en">Schedule</span>ご予約いただける日時</h3>
+      <ul class="schedule__list">
+        <li class="schedule__item">
+          <span class="schedule__day">月曜日</span>
+          <span class="schedule__time">20:00〜21:00</span>
+        </li>
+        <li class="schedule__item">
+          <span class="schedule__day">土曜日</span>
+          <span class="schedule__time">10:00〜11:00</span>
+        </li>
+        <li class="schedule__item schedule__item--other">
+          <span class="schedule__day">その他の日時</span>
+          <span class="schedule__time">メールにてご相談ください</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="flow" data-anim>
+      <h3 class="flow__title"><span class="flow__en">Flow</span>ご予約の流れ</h3>
+      <ol class="flow__list">
+        <li class="flow-step">
+          <span class="flow-step__num">STEP<b>1</b></span>
+          <h4>フォームから<br class="pc-only">お申し込み</h4>
+          <p>「予約希望・お問い合わせフォーム」に、お名前・ご希望日時・ご連絡先をご記入のうえ送信してください。</p>
+        </li>
+        <li class="flow-step">
+          <span class="flow-step__num">STEP<b>2</b></span>
+          <h4>メールで<br class="pc-only">日程を確定</h4>
+          <p>こちらからメールでご連絡し、日程を調整・確定します。</p>
+        </li>
+        <li class="flow-step">
+          <span class="flow-step__num">STEP<b>3</b></span>
+          <h4>お振込みで<br class="pc-only">ご予約確定</h4>
+          <p>お振込先をご案内します。ご入金を確認した時点で、ご予約の確定となります。</p>
+        </li>
+        <li class="flow-step">
+          <span class="flow-step__num">STEP<b>4</b></span>
+          <h4>ZoomのURLを<br class="pc-only">お知らせ</h4>
+          <p>当日ご参加いただく Zoom の URL をメールでお送りします。お時間になりましたら、リラックスしてご参加ください。</p>
+        </li>
+      </ol>
+      <p class="flow__note">
+        お支払いは銀行振込（事前）です。お支払い期限はご予約前日の20:00までとなります。<br class="pc-only">
+        キャンセル・日程変更については<a href="terms.html#cancel">キャンセルポリシー</a>をご確認ください。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. よくあるご質問 ============ -->
+<!-- ▼要確認：回答文はこちらで作成した文案です。実際の運用に合わせてご調整ください。 -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <header class="sec-head" data-anim>
+      <p class="sec-head__en">FAQ</p>
+      <h2 class="sec-head__ja">よくあるご質問</h2>
+    </header>
+
+    <p class="faq__lead" data-anim>安心してご相談いただくために</p>
+
+    <ul class="faq__list" id="faqList">
+      <li class="faq-item" data-anim>
+        <h3 class="faq-item__head">
+          <button type="button" class="faq-item__q" id="faqQ1" aria-expanded="false" aria-controls="faqA1">
+            <span class="faq-item__mark" aria-hidden="true">Q.</span>
+            <span class="faq-item__text">スピリチュアルケアは、特定の宗教と関係がありますか？</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq-item__a" id="faqA1" role="region" aria-labelledby="faqQ1">
+          <div class="faq-item__a-inner">
+            <span class="faq-item__mark faq-item__mark--a" aria-hidden="true">A.</span>
+            <p>特定の宗教や信仰をおすすめすることは一切ありません。スピリチュアルケアとは、「生きる意味」「なぜ自分だったのか」といった、人が根源的に抱く問いに寄り添う関わりのことです。信仰をお持ちの方も、そうでない方も、同じように安心してお話しいただけます。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item" data-anim>
+        <h3 class="faq-item__head">
+          <button type="button" class="faq-item__q" id="faqQ2" aria-expanded="false" aria-controls="faqA2">
+            <span class="faq-item__mark" aria-hidden="true">Q.</span>
+            <span class="faq-item__text">オンラインだと、うまく話せるか不安です。</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq-item__a" id="faqA2" role="region" aria-labelledby="faqQ2">
+          <div class="faq-item__a-inner">
+            <span class="faq-item__mark faq-item__mark--a" aria-hidden="true">A.</span>
+            <p>上手にお話しいただこうとしなくて大丈夫です。言葉が出てこない時間や沈黙も、大切な時間としてご一緒します。話す順番がまとまっていなくても、途中で止まってもかまいません。あなたのペースに合わせてお聴きします。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item" data-anim>
+        <h3 class="faq-item__head">
+          <button type="button" class="faq-item__q" id="faqQ3" aria-expanded="false" aria-controls="faqA3">
+            <span class="faq-item__mark" aria-hidden="true">Q.</span>
+            <span class="faq-item__text">死別など、深刻な悩みでないと相談してはいけませんか？</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq-item__a" id="faqA3" role="region" aria-labelledby="faqQ3">
+          <div class="faq-item__a-inner">
+            <span class="faq-item__mark faq-item__mark--a" aria-hidden="true">A.</span>
+            <p>そのようなことはありません。「なんとなくしんどい」「誰かに聞いてほしいだけ」というきっかけでも十分です。ご自身では小さなことに思えても、言葉にしてみることで整理されていくものがあります。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item" data-anim>
+        <h3 class="faq-item__head">
+          <button type="button" class="faq-item__q" id="faqQ4" aria-expanded="false" aria-controls="faqA4">
+            <span class="faq-item__mark" aria-hidden="true">Q.</span>
+            <span class="faq-item__text">相談内容が外部に漏れることはありますか？</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq-item__a" id="faqA4" role="region" aria-labelledby="faqQ4">
+          <div class="faq-item__a-inner">
+            <span class="faq-item__mark faq-item__mark--a" aria-hidden="true">A.</span>
+            <p>お話しいただいた内容の秘密は厳守いたします。ご本人の同意なく、ご家族を含む第三者にお伝えすることはありません。ただし、ご自身や他の方の生命・身体に危険が差し迫っていると判断される場合や、法令に基づく場合に限り、必要な範囲で関係機関と連携させていただくことがあります。</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="faq-item" data-anim>
+        <h3 class="faq-item__head">
+          <button type="button" class="faq-item__q" id="faqQ5" aria-expanded="false" aria-controls="faqA5">
+            <span class="faq-item__mark" aria-hidden="true">Q.</span>
+            <span class="faq-item__text">予約のキャンセルや日程変更はできますか？</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq-item__a" id="faqA5" role="region" aria-labelledby="faqQ5">
+          <div class="faq-item__a-inner">
+            <span class="faq-item__mark faq-item__mark--a" aria-hidden="true">A.</span>
+            <p>ご予約前日の20:00までにメールでご連絡いただければ、キャンセル料はかかりません。日程の変更も1回まで無料で承ります。前日20:00以降のキャンセルは料金の50%、ご連絡のないキャンセルは料金の全額を申し受けます。ご本人やご家族の急な体調不良など、やむを得ない事情のときは、ご遠慮なくお知らせください。詳しくは<a href="terms.html#cancel">キャンセルポリシー</a>をご覧ください。</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <p class="faq__foot" data-anim>
+      <span class="faq__leaf" aria-hidden="true"></span>
+      その他のご不明点があれば、<a href="#reserve">お問い合わせフォーム</a>からお気軽にお問い合わせください。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 予約希望・お問い合わせフォーム ============ -->
+<section class="cta reserve" id="reserve">
+  <div class="cta__light" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta__inner" data-anim>
+      <p class="cta__en">Reservation &amp; Contact</p>
+      <h2 class="cta__title">まずは、<br class="sp-only">お話を聞かせてください。</h2>
+      <p class="cta__text">
+        話しはじめる言葉が見つからなくても大丈夫です。<br>
+        沈黙も含めて、あなたのペースでご一緒します。
+      </p>
+      <ul class="reserve__days" aria-label="ご予約いただける日時">
+        <li>月曜 20:00〜21:00</li>
+        <li>土曜 10:00〜11:00</li>
+        <li>その他の日時はメールにて応相談</li>
+      </ul>
+    </div>
+
+    <div class="rform-wrap" data-anim>
+      <h3 class="rform-wrap__title">予約希望・お問い合わせフォーム</h3>
+      <p class="rform-wrap__lead">
+        送信いただいた時点では、ご予約は確定しません。内容を確認のうえ、<br class="pc-only">
+        3日以内に <span class="rform-wrap__mail" data-contact-email>hiroko.goma@gmail.com</span> からメールでご連絡いたします。
+      </p>
+
+      <form class="rform" id="reserveForm" novalidate>
+        <!-- 迷惑メール対策（人には見えない欄。入力があれば送信しません） -->
+        <div class="rform__hp" aria-hidden="true">
+          <label>この欄は空欄のままにしてください<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <fieldset class="rform__row rform__row--radio">
+          <legend class="rform__label">ご用件<span class="rform__req">必須</span></legend>
+          <div class="rform__choices">
+            <label class="rform__choice"><input type="radio" name="ご用件" value="初回オンライン相談の予約希望" checked><span>初回オンライン相談の予約希望（60分 3,000円）</span></label>
+            <label class="rform__choice"><input type="radio" name="ご用件" value="継続オンライン相談の予約希望"><span>継続オンライン相談の予約希望（60分 4,500円）</span></label>
+            <label class="rform__choice"><input type="radio" name="ご用件" value="お問い合わせのみ"><span>お問い合わせのみ</span></label>
+          </div>
+        </fieldset>
+
+        <div class="rform__grid">
+          <div class="rform__row">
+            <label class="rform__label" for="fName">お名前<span class="rform__req">必須</span></label>
+            <input class="rform__input" type="text" id="fName" name="お名前" autocomplete="name" placeholder="例：山田 花子" required aria-describedby="fName-err">
+            <p class="rform__error" id="fName-err"></p>
+          </div>
+          <div class="rform__row">
+            <label class="rform__label" for="fKana">フリガナ<span class="rform__req">必須</span></label>
+            <input class="rform__input" type="text" id="fKana" name="フリガナ" placeholder="例：ヤマダ ハナコ" required aria-describedby="fKana-err">
+            <p class="rform__error" id="fKana-err"></p>
+          </div>
+          <div class="rform__row">
+            <label class="rform__label" for="fEmail">メールアドレス<span class="rform__req">必須</span></label>
+            <input class="rform__input" type="email" id="fEmail" name="email" autocomplete="email" inputmode="email" placeholder="例：example@mail.com" required aria-describedby="fEmail-err">
+            <p class="rform__error" id="fEmail-err"></p>
+          </div>
+          <div class="rform__row">
+            <label class="rform__label" for="fTel">携帯電話番号<span class="rform__req">必須</span></label>
+            <input class="rform__input" type="tel" id="fTel" name="携帯電話番号" autocomplete="tel" inputmode="tel" placeholder="例：090-1234-5678" required aria-describedby="fTel-err">
+            <p class="rform__error" id="fTel-err"></p>
+          </div>
+          <div class="rform__row" data-for-reserve>
+            <label class="rform__label" for="fDate1">セッション希望日時（第1希望）<span class="rform__req">必須</span></label>
+            <input class="rform__input" type="text" id="fDate1" name="第1希望日時" placeholder="例：10月5日（月）20:00〜" required aria-describedby="fDate1-err">
+            <p class="rform__error" id="fDate1-err"></p>
+          </div>
+          <div class="rform__row" data-for-reserve>
+            <label class="rform__label" for="fDate2">セッション希望日時（第2希望）<span class="rform__opt">任意</span></label>
+            <input class="rform__input" type="text" id="fDate2" name="第2希望日時" placeholder="例：10月10日（土）10:00〜">
+          </div>
+        </div>
+
+        <div class="rform__row">
+          <label class="rform__label" for="fMsg">ご質問・ご要望<span class="rform__opt">任意</span></label>
+          <textarea class="rform__input rform__textarea" id="fMsg" name="ご質問・ご要望" rows="4" placeholder="ご質問や、ご希望日時の補足などがあればご記入ください。"></textarea>
+          <p class="rform__hint">ご相談内容の詳しいお話は、当日のセッションでうかがいます。ここには書かなくても大丈夫です。</p>
+        </div>
+
+        <div class="rform__confirm" data-for-reserve>
+          <p class="rform__confirm-title">お申し込み前にご確認ください</p>
+          <dl class="rform__terms">
+            <div><dt>料金</dt><dd>初回 60分 3,000円／継続 60分 4,500円（税込）</dd></div>
+            <div><dt>お支払い</dt><dd>銀行振込（事前）。お支払い期限はご予約前日の20:00まで。振込手数料はご負担ください</dd></div>
+            <div><dt>ご提供</dt><dd>ご予約の日時に Zoom で実施（通信料はご負担ください）</dd></div>
+            <div><dt>キャンセル</dt><dd>前日20:00まで無料／前日20:00以降・当日 50%／ご連絡なし 100%（<a href="terms.html#cancel" target="_blank" rel="noopener">詳しく見る</a>）</dd></div>
+          </dl>
+          <p class="rform__confirm-note">ご予約は、日程の確定後、ご入金を確認した時点で成立します。</p>
+        </div>
+
+        <div class="rform__row rform__agree-row">
+          <label class="rform__agree">
+            <input type="checkbox" id="fAgree" name="規約への同意" value="同意する" required aria-describedby="fAgree-err">
+            <span><a href="terms.html" target="_blank" rel="noopener">利用規約・キャンセルポリシー</a>と<a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します。（未成年の方は、保護者の方の同意を得たうえでお申し込みください）</span>
+          </label>
+          <p class="rform__error" id="fAgree-err"></p>
+        </div>
+
+        <div class="rform__submit">
+          <button type="submit" class="btn btn--primary btn--lg" id="rformSubmit"><span>この内容で送信する</span></button>
+        </div>
+        <p class="rform__status" id="rformStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="rform-done" id="rformDone" hidden tabindex="-1">
+        <p class="rform-done__title">送信が完了しました</p>
+        <p>お申し込みいただき、ありがとうございます。<br>
+          内容を確認のうえ、3日以内に <span data-contact-email>hiroko.goma@gmail.com</span> からメールでご連絡いたします。<br>
+          数日たっても返信が届かない場合は、迷惑メールフォルダをご確認いただくか、お手数ですが上記アドレスへ直接ご連絡ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="logo__mark logo__mark--light" aria-hidden="true"></span>
+      <p class="footer__name">Loko Pono</p>
+      <p class="footer__concept">心を本来の調和へ</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="フッターメニュー">
+      <ul>
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#worry">ご相談内容</a></li>
+        <li><a href="#feature">カウンセリングの特徴</a></li>
+        <li><a href="#profile">カウンセラー紹介</a></li>
+        <li><a href="#voice">ご利用いただいた方々の声</a></li>
+        <li><a href="#column">瞑想・坐禅のご案内</a></li>
+        <li><a href="#price">メニュー・料金</a></li>
+        <li><a href="#faq">よくあるご質問</a></li>
+      </ul>
+      <ul>
+        <li><a href="terms.html">利用規約・キャンセルポリシー</a></li>
+        <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
+        <li><a href="privacy.html">プライバシーポリシー</a></li>
+        <li><a href="#reserve" data-reserve>予約希望・お問い合わせフォーム</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p class="copyright">&copy; Loko Pono　All Rights Reserved.</p>
+</footer>
+
+<!-- ============ スマホ固定CTA ============ -->
+<div class="fixed-cta" id="fixedCta">
+  <a href="#reserve" data-reserve>
+    初回オンライン相談を申し込む
+  </a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
